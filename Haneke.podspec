@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Haneke'
-  s.version = '1.0.1'
+  s.version = '1.0.2'
   s.license = 'Apache 2.0'
   s.summary = 'A lightweight zero-config image cache for iOS.'
   s.description = <<-DESC
@@ -26,6 +26,7 @@ Haneke resizes images and caches the result on memory and disk. Everything is do
   s.social_media_url = 'https://twitter.com/hpique'
   s.source = { :git => 'https://github.com/Haneke/Haneke.git', :tag => "v#{s.version}" }
   s.platform = :ios, '7.0'
+  s.ios.deployment_target = "12.0"
   s.requires_arc = true
   s.source_files = 'Haneke/*.{h,m}'
   s.framework = 'ImageIO'
